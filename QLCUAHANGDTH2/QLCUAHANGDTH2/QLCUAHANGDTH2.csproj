@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{131442C1-F688-47CF-8633-EC6F9DE62C7D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLCUAHANGDTH2</RootNamespace>
+    <AssemblyName>QLCUAHANGDTH2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ban hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ban hang.Designer.cs">
+      <DependentUpon>ban hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form chính.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form chính.Designer.cs">
+      <DependentUpon>form chính.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hang.Designer.cs">
+      <DependentUpon>hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="khach hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="khach hang.Designer.cs">
+      <DependentUpon>khach hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nguoi ban hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nguoi ban hang.Designer.cs">
+      <DependentUpon>nguoi ban hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nguoi nhap hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nguoi nhap hang.Designer.cs">
+      <DependentUpon>nguoi nhap hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nha cung cap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nha cung cap.Designer.cs">
+      <DependentUpon>nha cung cap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nhap hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nhap hang.Designer.cs">
+      <DependentUpon>nhap hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quan ly tai khoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quan ly tai khoan.Designer.cs">
+      <DependentUpon>quan ly tai khoan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ban hang.resx">
+      <DependentUpon>ban hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form chính.resx">
+      <DependentUpon>form chính.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hang.resx">
+      <DependentUpon>hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="khach hang.resx">
+      <DependentUpon>khach hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nguoi ban hang.resx">
+      <DependentUpon>nguoi ban hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nguoi nhap hang.resx">
+      <DependentUpon>nguoi nhap hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nha cung cap.resx">
+      <DependentUpon>nha cung cap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nhap hang.resx">
+      <DependentUpon>nhap hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="quan ly tai khoan.resx">
+      <DependentUpon>quan ly tai khoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhap %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hoadon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khachhang %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phoneshop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone2 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhanvien %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhaphang %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cungcap %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tk %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\out %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thongke %281%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
